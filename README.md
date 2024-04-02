@@ -72,6 +72,7 @@ To start the project, run the following command:
 1. Navigate to the project directory: `cd studentApp1`
 2. execure command: `npm start`
 4. repeat steps 1 & 2 for studentApp2 & studentApp3 subprojects
+5. Note: If you want to run it locally, you have to modify the references in the files webpack.config.js (publicPath).
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
