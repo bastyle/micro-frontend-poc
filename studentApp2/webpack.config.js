@@ -4,7 +4,8 @@ const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "https://student-app-2-micro-frontend.onrender.com/",
+    //publicPath: "https://student-app-2-micro-frontend.onrender.com/",
+    publicPath: "http://localhost:3002/",
   },
 
   resolve: {
@@ -12,7 +13,7 @@ module.exports = (_, argv) => ({
   },
 
   devServer: {
-    port: 3001,
+    port: 3002,
     historyApiFallback: true,
   },
 
@@ -44,8 +45,8 @@ module.exports = (_, argv) => ({
       name: "studentApp1",
       filename: "remoteEntry.js",
       remotes: {
-        'studentApp1': 'studentApp1@https://student-app-1-micro-frontend.onrender.com/remoteEntry.js'
-        //'studentApp1': 'studentApp1@http://'+process.env.STUDENT_APP_1_URL+'/remoteEntry.js'
+        //'studentApp1': 'studentApp1@https://student-app-1-micro-frontend.onrender.com/remoteEntry.js'
+        'studentApp1': 'studentApp1@http://localhost:3001/remoteEntry.js'
       },
       exposes: {},
       shared: {
