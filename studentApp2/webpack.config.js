@@ -41,10 +41,10 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "aws",
+      name: "studentApp1",
       filename: "remoteEntry.js",
       remotes: {
-        'studentApp1': 'ecomm@http://localhost:3001/remoteEntry.js'
+        'studentApp1': 'studentApp1@http://localhost:3001/remoteEntry.js'
       },
       exposes: {},
       shared: {

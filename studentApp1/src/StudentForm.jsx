@@ -10,6 +10,7 @@ export default function StudentForm() {
                             <div class="card mb-5">
                                 <div class="card-body p-sm-5">
                                     <h2 class="text-center mb-4">Student Info.</h2>
+                                    <h6 class="text-center mb-4">(StudentApp1)</h6>
                                     <form method="post">
                                         <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name" /></div>
                                         <div class="mb-3"><input class="form-control" type="email" id="email-2" name="email" placeholder="Email" /></div>
