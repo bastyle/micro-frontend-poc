@@ -1,6 +1,7 @@
 import "./assets/bootstrap/css/bootstrap.min.css";
 
 export default function StudentForm() {
+    console.log("Student App 1, Student Form.");
     return (
         <div>
             <section class="position-relative py-4 py-xl-5">
